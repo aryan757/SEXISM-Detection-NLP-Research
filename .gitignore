@@ -1,0 +1,79 @@
+# ══════════════════════════════════════════════════════════════
+# EXIST 2026 — .gitignore
+# ══════════════════════════════════════════════════════════════
+
+# ── Datasets (large JSON files) ─────────────────────────────
+EXIST_2026/training/EXIST2026_training.json
+EXIST_2026/training/EXIST2026_training_english_filtered.json
+EXIST_2026/training/EXIST2026_training_english_spanish_filtered.json
+EXIST_2026/training/EXIST2026_testing_english_spanish_filtered.json
+EXIST_2026/training/EXIST2026_memes_for_llama.txt
+EXIST_2026/training/LLAMA_PROMPT.txt
+EXIST_2026/training/llama_batches/
+
+# ── Meme images ─────────────────────────────────────────────
+EXIST_2026/training/memes/
+EXIST_2026_TESTING/EXIST_2026_Memes_Dataset/
+
+# ── Test data & gold labels ─────────────────────────────────
+EXIST_2026_TESTING/evaluation/golds/
+EXIST_2026_TESTING/evaluation/baselines/
+
+# ── Training experiment outputs ─────────────────────────────
+EXIST_2026/training/outputs/
+
+# ── Submission files (generated, contain predictions) ───────
+Final_Testing_Script/submission/
+
+# ── PDF documents (too large for git) ───────────────────────
+*.pdf
+
+# ── EDA reports ─────────────────────────────────────────────
+EDA/
+
+# ── HTML reports ────────────────────────────────────────────
+*.html
+
+# ── SVG diagrams ────────────────────────────────────────────
+*.svg
+
+# ── Images ──────────────────────────────────────────────────
+*.png
+*.jpg
+*.jpeg
+
+# ── Python cache ────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# ── Virtual environments ───────────────────────────────────
+venv/
+env/
+.env/
+.venv/
+
+# ── Jupyter Notebook checkpoints ───────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── macOS ───────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ── IDE ─────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Misc ────────────────────────────────────────────────────
+*.log
+*.tmp
+*.bak
+artifacts/
