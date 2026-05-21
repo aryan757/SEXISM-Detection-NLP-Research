@@ -132,7 +132,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="EXIST 2026 — Full Pipeline (all 3 subtasks)")
     parser.add_argument("--test_path",   required=True,  help="Path to EXIST2026_test_clean.json")
     parser.add_argument("--output_dir",  default="./submission", help="Output directory for JSON files")
-    parser.add_argument("--model_key",   default="qwen", help="Model key: moondream | qwen | llava | unsloth_gemma")
+    parser.add_argument("--model_key",   default="", help="Model key: moondream | qwen | llava | unsloth_gemma")
     parser.add_argument("--run_id",      type=int, default=1, help="Run number 1-3 (for multiple submissions)")
     parser.add_argument("--max_records", type=int, default=None, help="Limit number of records (useful for testing)")
     args = parser.parse_args()

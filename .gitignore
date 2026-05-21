@@ -1,79 +1,103 @@
 # ══════════════════════════════════════════════════════════════
 # EXIST 2026 — .gitignore
 # ══════════════════════════════════════════════════════════════
+# Large data files are excluded. Code & scripts are tracked.
+# ══════════════════════════════════════════════════════════════
 
-# ── Datasets (large JSON files) ─────────────────────────────
-EXIST_2026/training/EXIST2026_training.json
-EXIST_2026/training/EXIST2026_training_english_filtered.json
-EXIST_2026/training/EXIST2026_training_english_spanish_filtered.json
-EXIST_2026/training/EXIST2026_testing_english_spanish_filtered.json
-EXIST_2026/training/EXIST2026_memes_for_llama.txt
-EXIST_2026/training/LLAMA_PROMPT.txt
-EXIST_2026/training/llama_batches/
+# ── 📂 DATASETS (large JSON files — DO NOT commit) ───────────
+*.json
+# Re-include small config/schema JSON if needed:
+# !some_config.json
 
-# ── Meme images ─────────────────────────────────────────────
-EXIST_2026/training/memes/
-EXIST_2026_TESTING/EXIST_2026_Memes_Dataset/
-
-# ── Test data & gold labels ─────────────────────────────────
-EXIST_2026_TESTING/evaluation/golds/
-EXIST_2026_TESTING/evaluation/baselines/
-
-# ── Training experiment outputs ─────────────────────────────
-EXIST_2026/training/outputs/
-
-# ── Submission files (generated, contain predictions) ───────
-Final_Testing_Script/submission/
-
-# ── PDF documents (too large for git) ───────────────────────
-*.pdf
-
-# ── EDA reports ─────────────────────────────────────────────
-EDA/
-
-# ── HTML reports ────────────────────────────────────────────
-*.html
-
-# ── SVG diagrams ────────────────────────────────────────────
-*.svg
-
-# ── Images ──────────────────────────────────────────────────
-*.png
+# ── 🖼️  MEME IMAGES ──────────────────────────────────────────
 *.jpg
 *.jpeg
+*.png
+*.gif
+*.bmp
+*.webp
+*.tiff
+*.tif
+memes/
+EXIST_2026_TESTING/EXIST_2026_Memes_Dataset/training/memes/
+EXIST_2026_TESTING/EXIST_2026_Memes_Dataset/test/memes/
 
-# ── Python cache ────────────────────────────────────────────
+# ── 📦 ENTIRE LARGE DATA DIRECTORIES ─────────────────────────
+EXIST_2026_TESTING/EXIST_2026_Memes_Dataset/
+EXIST_2026/training/llama_batches/
+EXIST_2026/training/outputs/
+
+# ── 📄 PDF DOCUMENTS ─────────────────────────────────────────
+*.pdf
+
+# ── 📊 EDA OUTPUTS ───────────────────────────────────────────
+EDA/
+EDA_EXIST/
+EDA_code/plots/
+EDA_code/eda_output.txt
+EDA_code/eda_with_plots.py
+
+# ── 🌐 HTML REPORTS ──────────────────────────────────────────
+*.html
+
+# ── 🎨 SVG DIAGRAMS ──────────────────────────────────────────
+*.svg
+
+# ── 📋 TEXT DUMPS ────────────────────────────────────────────
+*.txt
+
+# ── 📦 ZIP / ARCHIVES ────────────────────────────────────────
+*.zip
+*.tar.gz
+*.tar
+*.gz
+
+# ── 🏆 SUBMISSION FOLDERS (generated predictions) ────────────
+Final_Testing_Script/exist2026_AryanSomnathBanerjee/
+Final_Testing_Script/exist2026_AryanSomnathBanerjee_run2/
+Final_Testing_Script/exist2026_AryanSomnathBanerjee_run3/
+Final_Testing_Script/exist2026_AryanSomnathBanerjee_run4/
+EXIST_2026_TESTING/exist2026_AryanSomnathBanerjee/
+exist2026_APARAJITA_NITA_JH/
+
+# ── 🔬 LIME NOTEBOOK (large output cells) ────────────────────
+*.ipynb
+
+# ── 🐍 PYTHON CACHE ──────────────────────────────────────────
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 .Python
 
-# ── Virtual environments ───────────────────────────────────
+# ── 🌍 VIRTUAL ENVIRONMENTS ──────────────────────────────────
 venv/
 env/
 .env/
 .venv/
+conda-env/
 
-# ── Jupyter Notebook checkpoints ───────────────────────────
+# ── 📓 JUPYTER CHECKPOINTS ───────────────────────────────────
 .ipynb_checkpoints/
-*.ipynb
 
-# ── macOS ───────────────────────────────────────────────────
+# ── 🍎 macOS ──────────────────────────────────────────────────
 .DS_Store
 .AppleDouble
 .LSOverride
 ._*
 
-# ── IDE ─────────────────────────────────────────────────────
+# ── 🛠️  IDE ────────────────────────────────────────────────────
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# ── Misc ────────────────────────────────────────────────────
+# ── 📝 MISC ───────────────────────────────────────────────────
 *.log
 *.tmp
 *.bak
 artifacts/
+evaluation_metrices_2026/PyEvALL/
+exist_multi_agent/my_agent/.adk/
+exist_multi_agent/my_agent/.env

@@ -1,0 +1,31 @@
+section	task	mode	run	gold	metric	value
+vs_baseline	task2_1	hard	1	majority_class_baseline	ERROR	float division by zero
+vs_baseline	task2_1	hard	2	majority_class_baseline	ERROR	float division by zero
+vs_baseline	task2_1	hard	3	majority_class_baseline	ERROR	float division by zero
+vs_baseline	task2_1	soft	1	majority_class_baseline	ERROR	cdf() not defined when sigma is zero
+vs_baseline	task2_1	soft	2	majority_class_baseline	ERROR	cdf() not defined when sigma is zero
+vs_baseline	task2_1	soft	3	majority_class_baseline	ERROR	cdf() not defined when sigma is zero
+vs_baseline	task2_2	hard	1	majority_class_baseline	ERROR	float division by zero
+vs_baseline	task2_2	hard	2	majority_class_baseline	ERROR	float division by zero
+vs_baseline	task2_2	hard	3	majority_class_baseline	ERROR	float division by zero
+vs_baseline	task2_2	soft	1	majority_class_baseline	ERROR	cdf() not defined when sigma is zero
+vs_baseline	task2_2	soft	2	majority_class_baseline	ERROR	cdf() not defined when sigma is zero
+vs_baseline	task2_2	soft	3	majority_class_baseline	ERROR	cdf() not defined when sigma is zero
+vs_baseline	task2_3	hard	1	majority_class_baseline	ERROR	'PyEvALLDataframeReport' object has no attribute 'get_metric_dataframe'
+vs_baseline	task2_3	hard	2	majority_class_baseline	ERROR	'PyEvALLDataframeReport' object has no attribute 'get_metric_dataframe'
+vs_baseline	task2_3	hard	3	majority_class_baseline	ERROR	'PyEvALLDataframeReport' object has no attribute 'get_metric_dataframe'
+vs_baseline	task2_3	soft	1	majority_class_baseline	ERROR	cdf() not defined when sigma is zero
+vs_baseline	task2_3	soft	2	majority_class_baseline	ERROR	cdf() not defined when sigma is zero
+vs_baseline	task2_3	soft	3	majority_class_baseline	ERROR	cdf() not defined when sigma is zero
+inter_run_agreement	task2_1	hard	2	run1	ERROR	'PyEvALLDataframeReport' object has no attribute 'get_metric_dataframe'
+inter_run_agreement	task2_1	hard	3	run1	ERROR	'PyEvALLDataframeReport' object has no attribute 'get_metric_dataframe'
+inter_run_agreement	task2_1	soft	2	run1	ERROR	'PyEvALLDataframeReport' object has no attribute 'get_metric_dataframe'
+inter_run_agreement	task2_1	soft	3	run1	ERROR	'PyEvALLDataframeReport' object has no attribute 'get_metric_dataframe'
+inter_run_agreement	task2_2	hard	2	run1	ERROR	'PyEvALLDataframeReport' object has no attribute 'get_metric_dataframe'
+inter_run_agreement	task2_2	hard	3	run1	ERROR	'PyEvALLDataframeReport' object has no attribute 'get_metric_dataframe'
+inter_run_agreement	task2_2	soft	2	run1	ERROR	cdf() not defined when sigma is zero
+inter_run_agreement	task2_2	soft	3	run1	ERROR	'PyEvALLDataframeReport' object has no attribute 'get_metric_dataframe'
+inter_run_agreement	task2_3	hard	2	run1	ERROR	'PyEvALLDataframeReport' object has no attribute 'get_metric_dataframe'
+inter_run_agreement	task2_3	hard	3	run1	ERROR	'PyEvALLDataframeReport' object has no attribute 'get_metric_dataframe'
+inter_run_agreement	task2_3	soft	2	run1	ERROR	'PyEvALLDataframeReport' object has no attribute 'get_metric_dataframe'
+inter_run_agreement	task2_3	soft	3	run1	ERROR	'PyEvALLDataframeReport' object has no attribute 'get_metric_dataframe'
